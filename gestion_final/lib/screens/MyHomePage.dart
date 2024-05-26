@@ -27,30 +27,31 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color(0xff101b42),
           currentIndex: currentIndex,
           type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Color(0xFF000000),
-          selectedItemColor: Color(0xFF115d3b),
+          unselectedItemColor: Color(0xFFFFFFFF),
+          selectedItemColor: Color(0xFF3bb5dc),
           onTap: (index) => setState(() {
                 currentIndex = index;
               }),
           items: [
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.message_outlined,
+                Icons.home,
               ),
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.noise_aware),
+              icon: Icon(Icons.person),
               label: "Soporte",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.people_alt_outlined),
+              icon: Icon(Icons.camera_alt),
               label: "Escanear",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.phone_outlined),
+              icon: Icon(Icons.support_agent),
               label: "Perfil",
             ),
           ]),

@@ -10,6 +10,6 @@ class Scancam extends StatefulWidget {
 class _ScancamState extends State<Scancam> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold();
   }
 }
