@@ -34,7 +34,7 @@ class MainContent extends StatelessWidget {
               SizedBox(height: 20),
               Container(
                 width: size.width * 0.8,
-                height: size.height * 0.14,
+                //height: size.height * 0.14,
                 padding: EdgeInsets.all(16.0),
                 margin: EdgeInsets.all(8.0),
                 decoration: BoxDecoration(
@@ -48,24 +48,26 @@ class MainContent extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Mis ecopuntos:",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    SizedBox(height: 8.0),
-                    Text(
-                      "450536",
-                      style: TextStyle(color: Colors.white, fontSize: 24),
-                    ),
-                  ],
+                child: Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Mis ecopuntos:",
+                        style: TextStyle(color: Colors.white, fontSize: 18),
+                      ),
+                      SizedBox(height: 8.0),
+                      Text(
+                        "450536",
+                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Container(
                 width: size.width * 1.3,
-                height: size.height * 0.31,
+                //height: size.height * 0.31,
                 padding: EdgeInsets.all(16.0),
                 margin: EdgeInsets.all(8.0),
                 decoration: BoxDecoration(
@@ -127,7 +129,7 @@ class MainContent extends StatelessWidget {
               ),
               Container(
                 width: size.width * 1.3,
-                height: size.height * 0.24,
+                //height: size.height * 0.24,
                 padding: EdgeInsets.all(16.0),
                 margin: EdgeInsets.all(8.0),
                 decoration: BoxDecoration(
