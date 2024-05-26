@@ -16,10 +16,14 @@ class _ScancamState extends State<Scancam> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}, child: Text("Camara")),
             ElevatedButton(
                 onPressed: () {
-                  PickImage();
+                  PickImageCamera();
+                },
+                child: Text("Camara")),
+            ElevatedButton(
+                onPressed: () {
+                  PickImageGallery();
                 },
                 child: Text("Galería"))
           ],
@@ -28,7 +32,23 @@ class _ScancamState extends State<Scancam> {
     );
   }
 
-  Future PickImage() async {
-    final image = await ImagePicker().pickImage(source: ImageSource.gallery);
+  Future PickImageGallery() async {
+    print("hola");
+    final returnedimage =
+        await ImagePicker().pickImage(source: ImageSource.gallery);
+
+    if (returnedimage != null) {
+      print("hay imagen!");
+    }
+  }
+
+  Future PickImageCamera() async {
+    print("hola");
+    final returnedimage =
+        await ImagePicker().pickImage(source: ImageSource.camera);
+
+    if (returnedimage != null) {
+      print("hay imagen!");
+    }
   }
 }
