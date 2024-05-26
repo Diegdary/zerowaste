@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
+import 'package:gestion_final/screens/MainContent.dart';
+import 'package:gestion_final/screens/Scan.dart';
+import 'package:gestion_final/screens/profile.dart';
+import 'package:gestion_final/screens/support.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -13,10 +16,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int currentIndex = 0;
   final screens = [
-    MyHomePage(title: "Whatsapp"),
-    statusme(),
-    Community(),
-    Calls()
+    MainContent(),
+    Suport(),
+    Scancam(),
+    ProfScreen(),
   ];
 
   @override
@@ -36,19 +39,19 @@ class _HomeState extends State<Home> {
               icon: Icon(
                 Icons.message_outlined,
               ),
-              label: "Chats",
+              label: "Home",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.noise_aware),
-              label: "Updates",
+              label: "Soporte",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.people_alt_outlined),
-              label: "Community",
+              label: "Escanear",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.phone_outlined),
-              label: "Calls",
+              label: "Perfil",
             ),
           ]),
     );
