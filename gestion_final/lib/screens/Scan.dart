@@ -19,7 +19,7 @@ class _ScancamState extends State<Scancam> {
             ElevatedButton(onPressed: () {}, child: Text("Camara")),
             ElevatedButton(
                 onPressed: () {
-                  PickImage();
+                 
                 },
                 child: Text("Galería"))
           ],
@@ -28,7 +28,4 @@ class _ScancamState extends State<Scancam> {
     );
   }
 
-  Future PickImage() async {
-    final image = await ImagePicker().pickImage(source: ImageSource.gallery);
-  }
 }
