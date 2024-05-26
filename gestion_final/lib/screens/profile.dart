@@ -33,7 +33,7 @@ class _ProfScreenState extends State<ProfScreen> {
             child: Center(
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                //height: MediaQuery.of(context).size.height,
+                
                 child: Column(
                   //columnas
                   children: [
@@ -73,7 +73,7 @@ class _ProfScreenState extends State<ProfScreen> {
                       margin: EdgeInsets.fromLTRB(0, 30.0, 0, 0),
                       child: CircleAvatar(
                         minRadius: 50,
-                        backgroundImage: AssetImage('assets/login.png'),
+                        backgroundImage: AssetImage('assets/img/samuel1-01.png'),
                       ),
                     ),
                     Container(
